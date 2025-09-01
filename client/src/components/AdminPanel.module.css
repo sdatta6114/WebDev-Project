@@ -1,0 +1,159 @@
+/* File: client/src/components/AdminPanel.module.css */
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.errorText {
+  color: #ef4444;
+}
+
+.approvalSection {
+  margin-bottom: 2rem;
+}
+
+.approvalCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fef9c3;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.approvalActions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.approveButton {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.rejectButton {
+  background-color: #ef4444; /* red-500 */
+  color: white;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th, .table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top; /* Align content to the top */
+}
+
+.table th {
+  background-color: #f9fafb;
+}
+
+.removeButton {
+  color: #dc2626;
+  background: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.removeButton:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.fileList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.fileList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+
+.deleteFileButton {
+    background: none;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+    font-size: 0.75rem;
+    margin-left: 1rem;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status::before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.status.active {
+    color: #15803d; /* green-700 */
+    background-color: #dcfce7; /* green-100 */
+}
+
+.status.active::before {
+    background-color: #22c55e; /* green-500 */
+}
+
+.status.inactive {
+    color: #6b7280; /* gray-500 */
+    background-color: #f3f4f6; /* gray-100 */
+}
+
+.status.inactive::before {
+    background-color: #9ca3af; /* gray-400 */
+}

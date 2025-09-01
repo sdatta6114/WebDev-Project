@@ -1,0 +1,609 @@
+/* File: client/src/pages/LandingPage.module.css */
+.page {
+  background-color: white;
+  color: #334155; /* slate-700 */
+}
+
+/* --- Header Styles --- */
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0; /* slate-200 */
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b; /* slate-800 */
+}
+
+.mainNav {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+}
+
+.mainNav a {
+  color: #475569; /* slate-600 */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.mainNav a:hover {
+  color: #4f46e5; /* indigo-600 */
+}
+
+.authButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loginLink {
+  color: #475569;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.registerButton {
+  background-color: #1e293b; /* slate-800 */
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.registerButton:hover {
+  background-color: #334155;
+  text-decoration: none;
+}
+
+
+/* --- Hero Section Styles --- */
+.heroSection {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.heroContent {
+  flex: 1;
+}
+
+.heroTitle {
+  font-size: 3.75rem; /* 60px */
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1.1;
+}
+
+.heroSubtitle {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  color: #475569;
+  max-width: 500px;
+}
+
+.heroButtons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.ctaButton {
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.ctaButton:hover {
+  background-color: #4338ca;
+  text-decoration: none;
+}
+
+.secondaryButton {
+    background-color: transparent;
+    color: #334155;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid #cbd5e1; /* slate-300 */
+    transition: all 0.3s ease-in-out;
+}
+
+.secondaryButton:hover {
+    border-color: #4f46e5;
+    color: #4f46e5;
+}
+
+
+.heroImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* --- Animated Text Styles --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
+}
+
+.animatedTextContainer {
+    position: relative;
+    display: inline-block;
+    color: #4f46e5;
+    width: 220px; /* Adjust width based on the longest word */
+    text-align: left;
+}
+
+.animatedWord {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.animatedWord.visible {
+    position: relative; /* Take up space only when visible */
+    animation-name: fadeIn;
+}
+
+
+/* --- Shared Section Styles --- */
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+}
+
+.sectionSubtitle {
+  font-size: 1.125rem;
+  color: #475569;
+  text-align: center;
+  max-width: 600px;
+  margin: 1rem auto 0;
+}
+
+
+/* --- Features Section Styles --- */
+.featuresSection {
+  padding: 6rem 1.5rem;
+  background-color: #f8fafc; /* slate-50 */
+}
+
+.featuresGrid {
+  max-width: 1280px;
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.featureCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.featureIcon {
+  font-size: 2.5rem;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.featureDescription {
+  margin-top: 0.5rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* --- Plans Section Styles --- */
+.plansSection {
+  padding: 6rem 1.5rem;
+}
+
+.plansGrid {
+  max-width: 1024px;
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.planCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.planCard.featured {
+  border: 2px solid #4f46e5;
+  position: relative;
+  transform: scale(1.05);
+}
+
+.featuredBadge {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4f46e5;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.planName {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.planDescription {
+  margin-top: 0.5rem;
+  color: #475569;
+  font-size: 0.875rem;
+}
+
+.planPrice {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.planPeriod {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #64748b;
+  margin-left: 0.25rem;
+}
+
+.planFeatures {
+  list-style: '✓';
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: #475569;
+  flex-grow: 1; /* Pushes button to the bottom */
+}
+
+.planFeatures li {
+  margin-bottom: 0.75rem;
+}
+
+.planButton {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  border: 1px solid #4f46e5;
+  background-color: #eef2ff; /* indigo-50 */
+  color: #4f46e5;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-decoration: none;
+  box-sizing: border-box; /* FIX: This ensures padding is included in the width */
+}
+
+.planButton:hover {
+  background-color: #c7d2fe; /* indigo-200 */
+}
+
+.planCard.featured .planButton {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.planCard.featured .planButton:hover {
+  background-color: #4338ca;
+}
+
+
+/* --- How It Works Section Styles --- */
+.howItWorksSection {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.howItWorksContent {
+  flex: 1;
+}
+
+.howItWorksContent .sectionTitle, .howItWorksContent .sectionSubtitle {
+    text-align: left;
+    margin-left: 0;
+}
+
+.stepsList {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stepsList li {
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stepsList span {
+    background-color: #eef2ff; /* indigo-50 */
+    color: #4f46e5;
+    font-weight: 700;
+    border-radius: 9999px;
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.howItWorksImageContainer {
+    flex: 1;
+}
+
+.howItWorksImage {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* --- Support Section Styles --- */
+.supportSection {
+    padding: 6rem 1.5rem;
+    background-color: #f8fafc; /* slate-50 */
+}
+
+.supportGrid {
+    max-width: 1024px;
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.supportSubTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+}
+
+.supportForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.formGroup input, .formGroup textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.375rem;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.formGroup input:focus, .formGroup textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 1px #4f46e5;
+}
+
+.submitButton {
+    background-color: #1e293b;
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1rem;
+}
+
+.submitButton:hover {
+    background-color: #334155;
+}
+
+.accordionItem {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.accordionQuestion {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 1.5rem 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordionQuestion span {
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordionQuestion span.rotated {
+    transform: rotate(180deg);
+}
+
+.accordionAnswer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
+.accordionAnswer.open {
+    max-height: 200px; /* Adjust as needed */
+    padding-bottom: 1.5rem;
+}
+
+.accordionAnswer p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.6;
+}
+
+
+/* --- Testimonials Section --- */
+.testimonialsSection {
+    padding: 6rem 1.5rem;
+}
+
+.testimonialsGrid {
+    max-width: 1024px;
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.testimonialCard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.testimonialText {
+    font-size: 1.125rem;
+    font-style: italic;
+    color: #334155;
+    line-height: 1.7;
+}
+
+.testimonialAuthor {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: #475569;
+    line-height: 1.4;
+}
+
+.testimonialAuthor strong {
+    color: #1e293b;
+}
+
+
+/* --- Footer --- */
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.875rem;
+  color: #64748b; /* slate-500 */
+}
+
+.footerLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .heroSection, .howItWorksSection {
+        flex-direction: column;
+        text-align: center;
+    }
+    .howItWorksContent .sectionTitle, .howItWorksContent .sectionSubtitle {
+        text-align: center;
+        margin-left: auto;
+    }
+    .featuresGrid, .plansGrid {
+        grid-template-columns: 1fr;
+    }
+    .planCard.featured {
+      transform: scale(1);
+    }
+    .testimonialsGrid {
+        grid-template-columns: 1fr;
+    }
+    .mainNav {
+        display: none; /* Simple hiding for mobile, can be replaced with a menu button */
+    }
+    .supportGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 786px) {
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+    .sectionTitle {
+        font-size: 1.875rem;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

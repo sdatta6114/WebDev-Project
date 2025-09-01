@@ -1,0 +1,54 @@
+/* File: client/src/components/DashboardHome.module.css */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.filesCard {
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* --- ADD THESE STYLES FOR THE RECENT FILES TABLE --- */
+.filesTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+.filesTable th,
+.filesTable td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.filesTable th {
+    background-color: #f9fafb;
+    font-weight: 600;
+    color: #4b5563;
+}

@@ -1,0 +1,60 @@
+/* File: client/src/components/UploadHistory.module.css */
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th, .table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.table th {
+  background-color: #f9fafb;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.action {
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.action.uploaded {
+    color: #166534; /* green-800 */
+    background-color: #dcfce7; /* green-100 */
+}
+
+.action.deleted {
+    color: #991b1b; /* red-800 */
+    background-color: #fee2e2; /* red-100 */
+}

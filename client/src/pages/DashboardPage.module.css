@@ -1,0 +1,48 @@
+/* File: client/src/pages/DashboardPage.module.css */
+.layout {
+  display: flex;
+  height: 100vh;
+  background-color: #f1f5f9;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pageTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.pageContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mobileMenuButton {
+    display: block;
+  }
+}

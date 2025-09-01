@@ -1,0 +1,97 @@
+/* File: client/src/pages/LoginPage.module.css */
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  width: 100%;
+  max-width: 28rem;
+  position: relative; /* Required for positioning the close button */
+}
+
+/* --- ADDED STYLES FOR CLOSE BUTTON --- */
+.closeButton {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    line-height: 1;
+    color: #9ca3af; /* gray-400 */
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: color 0.2s;
+}
+
+.closeButton:hover {
+    color: #1f2937; /* gray-800 */
+}
+/* --- END OF ADDED STYLES --- */
+
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 1px #4f46e5;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #4338ca;
+}
+
+.errorText {
+  color: #ef4444;
+  font-size: 0.875rem;
+}
+
+.successText {
+  color: #22c55e;
+  font-size: 0.875rem;
+}
+
+.footerText {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.link {
+  font-weight: 500;
+  color: #4f46e5;
+  margin-left: 0.25rem;
+}

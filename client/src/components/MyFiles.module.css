@@ -1,0 +1,67 @@
+/* File: client/src/components/MyFiles.module.css */
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th, .table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.table th {
+  background-color: #f9fafb;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.fileNameCell {
+    cursor: pointer;
+    color: #4f46e5;
+    font-weight: 500;
+}
+
+.fileNameCell:hover {
+    text-decoration: underline;
+}
+
+.deleteButton {
+    color: #ef4444;
+    background: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.noFiles {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+}
