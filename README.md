@@ -1,4 +1,4 @@
-# 📊 AnalytixExcel: MERN Stack Data Visualization Platform
+# 📊 AnalytixExcel:MERN Stack Data Visualization Platform
 
 **AnalytixExcel** is a full-stack web application built with the MERN (MongoDB, Express.js, React, Node.js) stack. It empowers users to upload their Excel files, instantly generate a wide variety of interactive 2D and 3D charts, and gain insights into their data through an integrated AI assistant. The platform is designed for collaboration and security, featuring a robust role-based authentication system.
 
